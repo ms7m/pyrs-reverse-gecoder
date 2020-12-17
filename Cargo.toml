@@ -1,0 +1,21 @@
+[package]
+name = "pyrs-reverse-geocoder"
+version = "0.1.1"
+authors = ["Mustafa Mohamed <mustafa@ms7m.me>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reverse_geocoder = "2.0.0"
+dict_derive = "0.3.0"
+
+
+[lib]
+crate-type = ["cdylib"]
+name = "pyrs_reverse_geocoder"
+
+
+[dependencies.pyo3]
+version = "0.12.4"
+features = ["extension-module"]
